@@ -1,0 +1,83 @@
+/* Media Query for Mobile Devices */ 
+@media (max-width: 480px) {
+.mobile-menu{
+	position:fixed;
+	left:0px;
+	top:0px;
+	background-color:#fff;
+	display:none;
+	z-index:10000;
+	width:230px;
+	height:100%;
+	padding:25px 10px 10px 10px;
+}
+.mobile-menu li{
+	float:none;
+}
+.mob-nav-head{
+	display:block;
+}
+.m-head-nav{
+	font-size:12px;
+	margin-top:6px;
+}
+.m-head-nav a{
+	text-decoration:none;
+	color:#000;
+}
+.m-head-nav span{
+	margin:0px 10px;
+}
+.nav-btn{
+	cursor:pointer;
+}
+.mob-overlay{
+	position:fixed;
+	width:100%;
+	height:100%;
+	left:0px;
+	top:0px;
+	z-index:9999;
+	background-color:rgba(0,0,0,.4);
+	display:none;
+}
+.m-close-btn{
+	position:absolute;
+	width:20px;
+	height:20px;
+	top:0px;
+	right:5px;
+	cursor:pointer;
+	display:block;
+}
+.submenu-pop{
+	border:0px;
+	position:static;
+	left:0px;
+	width:100%;
+	background-color:#EBF5FE;
+}
+.common-popup{
+	max-width:400px;
+}
+.t-logo{
+	width:100px !important;
+}
+}
+/* Media Query for low resolution  Tablets, Ipads */ 
+@media (min-width: 481px) and (max-width: 1000px) { 
+}
+/* Media Query for Tablets Ipads portrait mode */ 
+@media (min-width: 768px) and (max-width: 1024px){ 
+
+} 
+          
+/* Media Query for Laptops and Desktops */ 
+@media (min-width: 1025px) and (max-width: 1280px){ 
+
+} 
+          
+/* Media Query for Large screens */ 
+@media (min-width: 1281px) { 
+
+} 

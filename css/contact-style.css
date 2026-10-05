@@ -1,0 +1,40 @@
+.contact-banner {
+    background-color: #1150a0;
+    min-height: 450px;
+    color: #fff;
+    padding-top: 3%;
+}
+.nav-link {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+}
+.contact-img-con{
+	min-height:200px;
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:25%;
+}
+.c-red-bg{
+	background-color:#fb9ca4;
+}
+.c-blue-bg{
+	background-color:#82bbfd;
+}
+a{
+	text-decoration:none;
+	color:#000;
+	font-size:14px;
+}
+@media (max-width: 480px) {
+.navbar-collapse{
+	flex-basis: 0;
+    flex-grow: 0;
+}
+.navbar-nav{
+	flex-direction:row;
+}
+.nav-link{
+	padding:10px;
+}
+}

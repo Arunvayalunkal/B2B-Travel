@@ -1,0 +1,101 @@
+.home-banner {
+    background-color: #1150a0;
+    min-height: 450px;
+    color: #fff;
+    padding-top: 3%;
+}
+.home-banner h1 {
+    font-weight: 700;
+}
+.fb-h1{
+	font-size:30px;
+}
+.fb-h1 span{
+	font-size:25px;
+	display:block;
+}
+.bnr-reg-btn {
+    background-color: #FFF;
+    color: #1150a0;
+    font-weight: 700;
+    width: 185px;
+}
+.bnr-reg-btn:hover{
+	background-color: #FFF !important;
+    color: #1150a0;
+    font-weight: 700;
+    width: 185px;
+}
+.bnr-reg-btn:focus{
+	background-color: #FFF !important;
+    color: #1150a0;
+    font-weight: 700;
+    width: 185px;
+}
+.p-work-bx {
+    min-height: 300px;
+}
+.home-section {
+}
+.home-section h2 {
+    font-weight: 700;
+}
+.nav-link {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+}
+.producthome-banner {
+    background-color: #1150a0;
+    min-height: 450px;
+    color: #fff;
+    padding-top: 3%;
+}
+/*visa style*/
+
+.visa-type-con{
+	background:url(../images/products/type-of-visa-bg.jpg) no-repeat center center;
+	background-size:cover;
+}
+
+@media (max-width: 480px) {
+.navbar-collapse{
+	flex-basis: 0;
+    flex-grow: 0;
+}
+.navbar-nav{
+	flex-direction:row;
+}
+.nav-link{
+	padding:10px;
+}
+.banner-section {
+  height: 870px;
+}
+.bnr-fsearch {
+	width:315px;
+}
+.bnr-hotel{
+	right:200px;
+}
+.bnr-holiday{
+	right:23px;
+}
+.mid-section{
+	height:570px;
+}
+.btm-section{
+	min-height:920px;
+	background-size: 100% 130%;
+}
+.red-overlay{
+	height:150px;
+	padding:0px 20px;
+}
+.red-overlay .h2{
+	font-size:16px;
+}
+.blue-overlay{
+	height:920px;
+}
+}

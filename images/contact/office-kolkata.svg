@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" version="1.1" id="svg1809" width="300" height="300" viewBox="0 0 682.66669 682.66669" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs"><g width="100%" height="100%" transform="matrix(1,0,0,1,0,0)"><defs id="defs1813">
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath1835">
+      <path d="M 0,512 H 512 V 0 H 0 Z" id="path1833" fill="#ffffff" fill-opacity="1" data-original-color="#000000ff" stroke="none" stroke-opacity="1"/>
+    </clipPath>
+  </defs><mask id="custom"><rect id="bg" x="0" y="0" width="100%" height="100%" fill="white"/><g transform="matrix(1.3333333,0,0,-1.3333333,0,682.66667)"/></mask><g mask="url(#custom)"><g id="g1815" transform="matrix(1.3333333,0,0,-1.3333333,0,682.66667)">
+    <g id="g1817" transform="translate(256,438.5)">
+      <path d="M 0,0 V 34" style="stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; stroke-dasharray: none;" id="path1819" fill="none" fill-opacity="1" stroke="#ffffff" stroke-opacity="1" data-original-stroke-color="#000000ff" stroke-width="15" data-original-stroke-width="15"/>
+    </g>
+    <g id="g1821" transform="translate(156.5,327.4902)">
+      <path d="M 0,0 V 15.01" style="stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; stroke-dasharray: none;" id="path1823" fill="none" fill-opacity="1" stroke="#ffffff" stroke-opacity="1" data-original-stroke-color="#000000ff" stroke-width="15" data-original-stroke-width="15"/>
+    </g>
+    <g id="g1825" transform="translate(356.5,327.4902)">
+      <path d="M 0,0 V 15.01" style="stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; stroke-dasharray: none;" id="path1827" fill="none" fill-opacity="1" stroke="#ffffff" stroke-opacity="1" data-original-stroke-color="#000000ff" stroke-width="15" data-original-stroke-width="15"/>
+    </g>
+    <g id="g1829">
+      <g id="g1831" clip-path="url(#clipPath1835)">
+        <g id="g1837" transform="translate(226,404.5801)">
+          <path d="m 0,0 v 24.42 c 0,4.42 3.58,8 8,8 h 44 c 4.42,0 8,-3.58 8,-8 V 0" style="stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; stroke-dasharray: none;" id="path1839" fill="none" fill-opacity="1" stroke="#ffffff" stroke-opacity="1" data-original-stroke-color="#000000ff" stroke-width="15" data-original-stroke-width="15"/>
+        </g>
+        <g id="g1841" transform="translate(321.5586,365.9062)">
+          <path d="m 0,0 c 2.871,-7.651 4.441,-15.938 4.441,-24.591 v -94.669 h -140 v 94.669 c 0,38.66 31.34,70 70,70 18.514,0 35.349,-7.187 47.867,-18.923" style="stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; stroke-dasharray: none;" id="path1843" fill="none" fill-opacity="1" stroke="#ffffff" stroke-opacity="1" data-original-stroke-color="#000000ff" stroke-width="15" data-original-stroke-width="15"/>
+        </g>
+        <g id="g1845" transform="translate(186,257.5)">
+          <path d="m 0,0 h -60 v 40 c 0,16.568 13.432,30 30,30 16.568,0 30,-13.432 30,-30 z" style="stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; stroke-dasharray: none;" id="path1847" fill="none" fill-opacity="1" stroke="#ffffff" stroke-opacity="1" data-original-stroke-color="#000000ff" stroke-width="15" data-original-stroke-width="15"/>
+        </g>
+        <g id="g1849" transform="translate(386,257.5)">
+          <path d="m 0,0 h -60 v 40 c 0,16.568 13.432,30 30,30 16.568,0 30,-13.432 30,-30 z" style="stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; stroke-dasharray: none;" id="path1851" fill="none" fill-opacity="1" stroke="#ffffff" stroke-opacity="1" data-original-stroke-color="#000000ff" stroke-width="15" data-original-stroke-width="15"/>
+        </g>
+        <path d="M 326,216.646 H 186 v 30 h 140 z" style="stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; stroke-dasharray: none;" id="path1853" fill="none" fill-opacity="1" stroke="#ffffff" stroke-opacity="1" data-original-stroke-color="#000000ff" stroke-width="15" data-original-stroke-width="15"/>
+        <path d="M 186,216.646 H 126 V 257.5 h 60 z" style="stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; stroke-dasharray: none;" id="path1855" fill="none" fill-opacity="1" stroke="#ffffff" stroke-opacity="1" data-original-stroke-color="#000000ff" stroke-width="15" data-original-stroke-width="15"/>
+        <path d="M 386,216.646 H 326 V 257.5 h 60 z" style="stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; stroke-dasharray: none;" id="path1857" fill="none" fill-opacity="1" stroke="#ffffff" stroke-opacity="1" data-original-stroke-color="#000000ff" stroke-width="15" data-original-stroke-width="15"/>
+        <g id="g1859" transform="translate(504.5,96.5)">
+          <path d="M 0,0 V -25 H -497 V 75.17" style="stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; stroke-dasharray: none;" id="path1861" fill="none" fill-opacity="1" stroke="#ffffff" stroke-opacity="1" data-original-stroke-color="#000000ff" stroke-width="15" data-original-stroke-width="15"/>
+        </g>
+        <g id="g1863" transform="translate(7.5,171.6704)">
+          <path d="M 0,0 V 14.951 H 497 V -43.545" style="stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; stroke-dasharray: none;" id="path1865" fill="none" fill-opacity="1" stroke="#ffffff" stroke-opacity="1" data-original-stroke-color="#000000ff" stroke-width="15" data-original-stroke-width="15"/>
+        </g>
+        <path d="M 106,71.5 H 76 v 115.122 h 30 z" style="stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; stroke-dasharray: none;" id="path1867" fill="none" fill-opacity="1" stroke="#ffffff" stroke-opacity="1" data-original-stroke-color="#000000ff" stroke-width="15" data-original-stroke-width="15"/>
+        <path d="m 172,71.5 h -30 v 115.122 h 30 z" style="stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; stroke-dasharray: none;" id="path1869" fill="none" fill-opacity="1" stroke="#ffffff" stroke-opacity="1" data-original-stroke-color="#000000ff" stroke-width="15" data-original-stroke-width="15"/>
+        <path d="m 238,71.5 h -30 v 115.122 h 30 z" style="stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; stroke-dasharray: none;" id="path1871" fill="none" fill-opacity="1" stroke="#ffffff" stroke-opacity="1" data-original-stroke-color="#000000ff" stroke-width="15" data-original-stroke-width="15"/>
+        <path d="m 304,71.5 h -30 v 115.122 h 30 z" style="stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; stroke-dasharray: none;" id="path1873" fill="none" fill-opacity="1" stroke="#ffffff" stroke-opacity="1" data-original-stroke-color="#000000ff" stroke-width="15" data-original-stroke-width="15"/>
+        <path d="m 370,71.5 h -30 v 115.122 h 30 z" style="stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; stroke-dasharray: none;" id="path1875" fill="none" fill-opacity="1" stroke="#ffffff" stroke-opacity="1" data-original-stroke-color="#000000ff" stroke-width="15" data-original-stroke-width="15"/>
+        <path d="m 436,71.5 h -30 v 115.122 h 30 z" style="stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; stroke-dasharray: none;" id="path1877" fill="none" fill-opacity="1" stroke="#ffffff" stroke-opacity="1" data-original-stroke-color="#000000ff" stroke-width="15" data-original-stroke-width="15"/>
+        <g id="g1879" transform="translate(63.8335,216.6216)">
+          <path d="m 0,0 h 440.667 v -30 h -497 V 0 H -32" style="stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; stroke-dasharray: none;" id="path1881" fill="none" fill-opacity="1" stroke="#ffffff" stroke-opacity="1" data-original-stroke-color="#000000ff" stroke-width="15" data-original-stroke-width="15"/>
+        </g>
+        <path d="M 504.5,39.5 H 7.5 v 32 h 497 z" style="stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; stroke-dasharray: none;" id="path1883" fill="none" fill-opacity="1" stroke="#ffffff" stroke-opacity="1" data-original-stroke-color="#000000ff" stroke-width="15" data-original-stroke-width="15"/>
+        <g id="g1885" transform="translate(186,257.5)">
+          <path d="M 0,0 H -78.594" style="stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; stroke-dasharray: none;" id="path1887" fill="none" fill-opacity="1" stroke="#ffffff" stroke-opacity="1" data-original-stroke-color="#000000ff" stroke-width="15" data-original-stroke-width="15"/>
+        </g>
+        <g id="g1889" transform="translate(404.5937,257.5)">
+          <path d="M 0,0 H -78.594" style="stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; stroke-dasharray: none;" id="path1891" fill="none" fill-opacity="1" stroke="#ffffff" stroke-opacity="1" data-original-stroke-color="#000000ff" stroke-width="15" data-original-stroke-width="15"/>
+        </g>
+        <g id="g1893" transform="translate(214,286.5)">
+          <path d="M 0,0 V -14" style="stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; stroke-dasharray: none;" id="path1895" fill="none" fill-opacity="1" stroke="#ffffff" stroke-opacity="1" data-original-stroke-color="#000000ff" stroke-width="15" data-original-stroke-width="15"/>
+        </g>
+        <g id="g1897" transform="translate(242,286.5)">
+          <path d="M 0,0 V -14" style="stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; stroke-dasharray: none;" id="path1899" fill="none" fill-opacity="1" stroke="#ffffff" stroke-opacity="1" data-original-stroke-color="#000000ff" stroke-width="15" data-original-stroke-width="15"/>
+        </g>
+        <g id="g1901" transform="translate(270,286.5)">
+          <path d="M 0,0 V -14" style="stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; stroke-dasharray: none;" id="path1903" fill="none" fill-opacity="1" stroke="#ffffff" stroke-opacity="1" data-original-stroke-color="#000000ff" stroke-width="15" data-original-stroke-width="15"/>
+        </g>
+        <g id="g1905" transform="translate(298,286.5)">
+          <path d="M 0,0 V -14" style="stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; stroke-dasharray: none;" id="path1907" fill="none" fill-opacity="1" stroke="#ffffff" stroke-opacity="1" data-original-stroke-color="#000000ff" stroke-width="15" data-original-stroke-width="15"/>
+        </g>
+      </g>
+    </g>
+  </g></g></g></svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="531" height="84.018" viewBox="0 0 531 84.018">
+  <g id="Group_3" data-name="Group 3" transform="translate(-466 -418.491)">
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(466 436)" fill="#fff" stroke="#204796" stroke-width="5">
+      <circle cx="24" cy="24" r="24" stroke="none"/>
+      <circle cx="24" cy="24" r="21.5" fill="none"/>
+    </g>
+    <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(949 436)" fill="#fff" stroke="#204796" stroke-width="5">
+      <circle cx="24" cy="24" r="24" stroke="none"/>
+      <circle cx="24" cy="24" r="21.5" fill="none"/>
+    </g>
+    <line id="Line_1" data-name="Line 1" x2="434" transform="translate(514.5 460.5)" fill="none" stroke="#a1a1a1" stroke-width="5" stroke-dasharray="5 8"/>
+    <g id="airplane" transform="translate(645 341.729)">
+      <g id="Group_2" data-name="Group 2" transform="translate(31.279 76.762)">
+        <g id="Group_1" data-name="Group 1">
+          <path id="Path_1" data-name="Path 1" d="M214.8,111.547,192.645,112,174.93,76.762H163.813l8.481,35.66-22.805.469-5.986-8.338H133.455l6.841,14.217-6.841,14.217H143.5l5.986-8.338,22.805.469-8.481,35.66H174.93l17.716-35.242,22.157.456a7.225,7.225,0,1,0,0-14.448Z" transform="translate(-133.455 -76.762)" fill="#1150a0"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

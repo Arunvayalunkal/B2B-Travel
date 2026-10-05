@@ -1,0 +1,158 @@
+.nav-link{
+	font-size:14px;
+	font-weight:600;
+	color:#000;
+}
+.banner-section{
+	min-height:450px;
+	background-color:#f8fbff;
+}
+.bnr-flight{
+	position:absolute;
+	width:190px;
+	height:190px;
+	top:0px;
+	right:0px;
+	background:url(../images/bnr-flight.png) no-repeat center center;
+	background-size:contain;
+	z-index:10;
+}
+.bnr-fsearch{
+	position:absolute;
+	width:395px;
+	height:200px;
+	top:0px;
+	right:100px;
+	background:url(../images/bnr-flight-search.svg) no-repeat center center;
+	background-size:contain;
+	z-index:20;
+}
+.bnr-holiday{
+	position:absolute;
+	width:150px;
+	height:150px;
+	top:220px;
+	right:50px;
+	background:url(../images/bnr-holiday.png) no-repeat center center;
+	background-size:contain;
+	z-index:10;
+}
+.bnr-hotel{
+	position:absolute;
+	width:200px;
+	height:200px;
+	top:200px;
+	right:220px;
+	background:url(../images/bnr-hotel.png) no-repeat center center;
+	background-size:contain;
+	z-index:10;
+}
+.mid-section{
+	background:url(../images/mid-sect-img.png) no-repeat center center;
+	background-size:cover;
+	min-height:450px;
+	position:relative;
+}
+.biztravel-section{
+	background:#f8fbff;
+	background-size:cover;
+	min-height:490px;
+	position:relative;
+}
+.biztrav-img{
+	max-width:800px;
+}
+.black-overlay{
+	background-color:rgba(0,0,0,.6);
+	width:100%;
+	height:100%;
+	position:absolute;
+}
+
+.blue-overlay{
+	background-color:rgba(5,26,54,.7);
+	width:100%;
+	height:100%;
+	position:absolute;
+}
+.red-overlay{
+	background-color:rgba(192,33,34,.7);
+	width:100%;
+	height:100%;
+	position:absolute;
+	z-index:100;
+	bottom:0px;
+}
+.booking-engine{
+	background:url(../images/booking-ngine.png) no-repeat center center;
+	background-size:cover;
+	min-height:300px;
+}
+.distribution-solution{
+	background:url(../images/distribution.png) no-repeat center center;
+	background-size:cover;
+	min-height:300px;
+}
+.white-label{
+	background:url(../images/tmc-whitelabel.png) no-repeat center center;
+	background-size:cover;
+	min-height:300px;
+}
+.unifiedAPI{
+	background:url(../images/api.png) no-repeat center center;
+	background-size:cover;
+	min-height:300px;
+}
+.stat-section{
+	background:#fff;
+	background-size:cover;
+	min-height:300px;
+	position:relative;
+}
+.btm-section{
+	background:url(../images/btm-section.png) no-repeat center top;
+	background-size:cover;
+	min-height:250px;
+	position:relative;
+}
+/*login style*/
+.login-window{
+	background-color:#FFF;
+	position:fixed;
+	top:20%;
+	left:0px;
+	right:0px;
+	margin:0 auto;
+	width:400px;
+	min-height:200px;
+	z-index:10000;
+	padding:30px;
+	border-radius:10px;
+}
+.login-overlay{
+	background-color:rgba(255,255,255,.8);
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	z-index:9999;
+}
+.border{
+	border-color:#b3becf !important;
+}
+.login-window .small{
+	font-size:12px;
+}
+.login-window .form-control{
+	height:23px;
+	font-size:14px;
+	color:#000;
+}
+.login-window a{
+	color:#1150A0;
+	text-decoration:none;
+}
+.login-window a:hover{
+	color:#1150A0;
+}

@@ -1,0 +1,66 @@
+/* Media Query for Mobile Devices */ 
+@media (max-width: 480px) {
+.navbar-collapse{
+	flex-basis: 0;
+    flex-grow: 0;
+}
+.navbar-nav{
+	flex-direction:row;
+}
+.nav-link{
+	padding:10px;
+}
+
+.banner-section {
+  height: 785px;
+}
+.mob-height{
+	height:410px;
+}
+.bnr-fsearch {
+	width:315px;
+}
+.bnr-hotel{
+	right:200px;
+}
+.bnr-holiday{
+	right:23px;
+}
+.mid-section{
+	height:650px;
+}
+.btm-section{
+	min-height:300px;
+}
+.btm-section .h2{
+	font-size:18px;
+}
+.red-overlay{
+	height:150px;
+	padding:0px 20px;
+}
+.red-overlay .h2{
+	font-size:16px;
+}
+.blue-overlay{
+	height:920px;
+}
+}
+
+/* Media Query for low resolution  Tablets, Ipads */ 
+@media (min-width: 481px) and (max-width: 1000px) { 
+}
+/* Media Query for Tablets Ipads portrait mode */ 
+@media (min-width: 768px) and (max-width: 1024px){ 
+
+} 
+          
+/* Media Query for Laptops and Desktops */ 
+@media (min-width: 1025px) and (max-width: 1280px){ 
+
+} 
+          
+/* Media Query for Large screens */ 
+@media (min-width: 1281px) { 
+
+} 

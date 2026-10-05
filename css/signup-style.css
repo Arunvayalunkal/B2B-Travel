@@ -1,0 +1,40 @@
+:root { --bta: #355AB1; --bta-dark: #1d3877; --bta-red: #EB1934; --bta-red-dark:#cd1129}
+	a{text-decoration:none; color:var(--bta)!important; }
+  body { background: #f2f5fb; min-height: 100vh; }
+  .brand-panel {
+    background: linear-gradient(160deg, var(--bta-dark), var(--bta));
+    color: #fff;
+  }
+  .brand-panel li { margin-bottom: .9rem; }
+  .card-main { border: 0; border-radius: 1rem; overflow: hidden; box-shadow: 0 10px 40px rgba(29,56,119,.18); }
+
+  /* Stepper */
+  .stepper { display: flex; align-items: center; margin-bottom: 2rem; }
+  .step { display: flex; align-items: center; gap: .6rem; color: #8a94a6; font-weight: 500; }
+  .step .dot {
+    width: 36px; height: 36px; border-radius: 50%;
+    display: grid; place-items: center;
+    border: 2px solid #cdd5e3; background: #fff; font-weight: 600;
+    transition: all .25s;
+  }
+  .step.active { color: var(--bta-dark); }
+  .step.active .dot { border-color: var(--bta); background: var(--bta); color: #fff; box-shadow: 0 0 0 4px rgba(53,90,177,.18); }
+  .step.done .dot { border-color: #198754; background: #198754; color: #fff; }
+  .step.done { color: #198754; }
+  .line { flex: 1; height: 2px; background: #cdd5e3; margin: 0 1rem; position: relative; }
+  .line::after { content: ""; position: absolute; inset: 0; background: #198754; width: 0; transition: width .3s; }
+  .line.filled::after { width: 100%; }
+
+  .form-control, .form-select { padding: .7rem .9rem; }
+  .input-group-text { background: #f8f9fc; }
+  .step-pane { display: none; }
+  .step-pane.active { display: block; animation: fade .3s ease; }
+  @keyframes fade { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+  .btn-primary { --bs-btn-bg: var(--bta-red); --bs-btn-border-color: var(--bta-red); --bs-btn-hover-bg: var(--bta-red-dark); --bs-btn-hover-border-color: var(--bta-red-dark); --bs-btn-active-bg: var(--bta-red-dark); padding: .7rem 1.6rem; }
+  a { color: var(--bta); }
+  .form-control:focus, .form-select:focus, .form-check-input:focus { border-color: var(--bta); box-shadow: 0 0 0 .25rem rgba(53,90,177,.2); }
+  .form-check-input:checked { background-color: var(--bta); border-color: var(--bta); }
+  .card-main { border-top: 0px solid var(--bta-red) !important; }
+  .logo-chip { background: #fff; border-radius: .75rem; padding: .75rem 1.1rem; display: inline-block; }
+  .brand-panel .tick { color: #fff; ; border-radius: 50%; }
+  .tagline-bar { width: 56px; height: 4px; background: #fff; border-radius: 2px; }
