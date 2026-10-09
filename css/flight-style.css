@@ -1,5 +1,5 @@
 .banner-con{
-	min-height:480px;
+	min-height:450px;
 	background:url(../images/search-banner-bg.png) no-repeat center center;
 	background-size:cover;
 }
@@ -56,6 +56,13 @@
 	border-top-right-radius:10px;
 	min-height:200px;
 
+}
+.f-type .form-check-inline{
+	margin-right:3px;
+	padding-left: 25px;
+}
+.f-type .form-check-label {
+	margin-left:3px !important;
 }
 .s-txt-fld{
 	border-radius:10px;
@@ -201,15 +208,15 @@
 }
 /*wizard style*/
 .wizard-wrap{
-	min-height:100px;
+	min-height:80px;
 	position:relative;
 }
 .wizard-line{
 	position:absolute;
-	top:19px;
+	top:15px;
 	left:0px;
 	right:0px;
-	width:92%;
+	width:90%;
 	height:1px;
 	border-bottom:2px #ABB7CC solid;
 	z-index:90;
@@ -217,7 +224,7 @@
 }
 .wizard-line-completed{
 	position:absolute;
-	top:19px;
+	top:15px;
 	left:50px;
 	right:0px;
 	height:1px;
@@ -239,10 +246,12 @@
 	margin:0px 75px 0px 0px;
 	width:123px;
 }
-
+.wizard-con ul li .small{
+	font-size:12px;
+}
 .w-default-tick{
-	width:40px;
-	height:40px;
+	width:30px;
+	height:30px;
 	border-radius:75%;
 	border:2px #ABB7CC solid;
 	background-color:#FFF;
@@ -250,6 +259,9 @@
 	padding:6px;
 	display:block;
 	text-align:center;
+}
+.w-default-tick img{
+	margin-top:-8px;
 }
 .w-completed-tick{
 	background-color: var(--bta);
@@ -262,9 +274,10 @@
 	padding:6px;
 }
 .ms-con{
-	border:1px #b2bbcb solid;
+	border:1px var(--line) solid;
 	border-radius:6px;
 	min-height:20px;
+	background-color:#fff;
 }
 .ms-brd-right{
 	border-right:1px #b2bbcb solid;
@@ -293,10 +306,11 @@
 	cursor:pointer;
 	display:inline-block;
 	margin:0 6px;
+	color:var(--bta);
 }
 /*filter style*/
 .filter-con{
-	border:1px #b2bbcb solid;
+	border:1px var(--line) solid;
 	border-radius:8px;
 	min-height:400px;
 	font-size:14px;
@@ -304,7 +318,7 @@
 	
 }
 .fltr-row{
-	border-bottom:1px #b2bbcb solid;
+	border-bottom:1px var(--line) solid;
 }
 .clear-fltr-link{
 	cursor:pointer;
@@ -417,14 +431,14 @@
 }
 .sr-list{
 	background-color:#fff;
-	border:1px #b2bbcb solid;
+	border:1px var(--line) solid;
 	border-radius:6px;
-	font-size:14px;
+	font-size:13px;
 	font-weight:500;
 }
 .bd-box{
 	background-color:#fff;
-	border:1px #b2bbcb solid;
+	border:1px var(--line) solid;
 	border-radius:6px;
 	font-size:14px;
 	font-weight:500;
@@ -433,7 +447,7 @@
 	padding:5px 14px;
 	font-size:12px;
 	margin:2px auto 0px auto;
-	width:87px;
+	width:86px;
 }
 .viewfare-btn:hover{
 	color:#fff;
@@ -453,7 +467,7 @@
 	background-color:#fff;
 }
 .fare-con{
-	border-left:2px #b2bbcb dashed;
+	border-left:1px var(--line) dashed;
 	position:relative;
 	text-align:center;
 	height:100%;
@@ -472,10 +486,10 @@
 	left:-11px;
 	width:20px;
 	height:15px;
-	background-color:#fff;
-	border-left:1px #b2bbcb solid;
-	border-right:1px #b2bbcb solid;
-	border-bottom:1px #b2bbcb solid;
+	background-color:var(--soft);
+	border-left:1px var(--line) solid;
+	border-right:1px var(--line) solid;
+	border-bottom:1px var(--line) solid;
 	border-bottom-left-radius:20px;
 	border-bottom-right-radius:20px;
 	z-index:10;
@@ -486,18 +500,25 @@
 	left:-11px;
 	width:20px;
 	height:15px;
-	background-color:#fff;
-	border-left:1px #b2bbcb solid;
-	border-right:1px #b2bbcb solid;
-	border-top:1px #b2bbcb solid;
+	background-color:var(--soft);
+	border-left:1px var(--line) solid;
+	border-right:1px var(--line) solid;
+	border-top:1px var(--line) solid;
 	border-top-left-radius:20px;
 	border-top-right-radius:20px;
 	z-index:10;
 }
+/*flight details style */
+.flight-details-con{
+	background-color:#F5F9FF;
+	border:1px #b2bbcb solid;
+	border-radius:6px;
+	font-size:12px;
+}
 
 /*fare details style */
 .fare-details-con{
-	background-color:#F5F5F5;
+	background-color:#F5F9FF;
 	border:1px #b2bbcb solid;
 	border-radius:6px;
 }
@@ -637,7 +658,7 @@
 }
 /*roundtrip international and domestic style*/
 .rti-row{
-	border-bottom:2px #b2bbcb dashed;
+	border-bottom:1px #b2bbcb dashed;
 }
 .rti-fare-con{
 	min-height:161px;
@@ -655,7 +676,7 @@
 	font-size:14px !important;
 }
 .drt-f-con{
-	min-height:108px;
+	min-height:48px;
 }
 
 .drt-vf-btn{
@@ -667,7 +688,7 @@
 	min-height:120px;
 	position:absolute;
 	top:28px;
-	right:0px;
+	right:120px;
 	background-color:#fff;
 	padding:10px 15px;
 	z-index:100;
@@ -705,7 +726,7 @@
 	margin-bottom:10px;
 }
 .sr-list.active{
-	border-color:#C02122;
+	border-color:#eb1934;
 }
 .sr-list.active .tick-top{
 	border-color:#C02122;
@@ -714,14 +735,14 @@
 	border-color:#C02122;
 }
 .sr-list.active .fare-con{
-	border-color:#C02122;
+	border-color:#eb1934;
 }
 .drt-result-pop{
 	position:fixed;
 	left:0px;
 	bottom:0px;
 	width:100%;
-	height:162px;
+	min-height:100px;
 	background-color:#fff;
 	z-index:9998;
 	padding-top:10px;
@@ -736,10 +757,10 @@
 	font-size:12px;
 }
 .nav-pills .nav-link.active{
-	background-color:#1150A0;
+	background-color:var(--bta);
 }
 .nav-pills .nav-link{
-	background-color:#E2E2E2;
+	background-color:#fff;
 	color:#000;
 	font-weight:600;
 	border-radius:5px;
@@ -758,7 +779,7 @@
 	border-radius:6px;
 	padding:10px;
 	min-height:100px;
-	width:350px;
+	width:270px;
 	float:left;
 	margin-right:10px;
 }
@@ -774,7 +795,7 @@
 	margin-left:10px;
 }
 .add-service-bx .small{
-	font-size:12px;
+	font-size:10px;
 }
 .ad-service-cr{
 	top:-30px;
@@ -784,6 +805,11 @@
 	left:inherit;
 	right:50px;
 }
+.svc-row{border:1px solid var(--line);border-radius:.75rem;padding:1rem; background-color:#fff;}
+.svc-row+.svc-row{margin-top:.75rem}
+.svc-name{font-weight:600}
+.svc-name small{font-weight:400}
+.seat-btn{width:100%;text-align:left;display:flex;justify-content:space-between;align-items:center}
 .bx-pointer{
 	  position:absolute;
 	  top:-26px;
@@ -853,7 +879,6 @@
 .benefits-wrapper {
            
 			margin-top:-30px;
-			z-index:10000;
 			position:relative;
         }
 

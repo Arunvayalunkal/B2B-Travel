@@ -41,10 +41,11 @@
   padding: 0px 6px 2px 6px;
   height:25px;
   margin: 2px 0px 0px auto;
-  width:63px;
+  width:72px;
 }
 .hidefare-btn {
   padding: 2px 6px;
+  width:72px;
 }
 .mob-list-top-bg{
 	background-color:#F5F5F5;
@@ -99,7 +100,7 @@
 .modify-btn{
 	position:absolute;
 	top:8px;
-	right:90px;
+	right:73px;
 	width:88px;
 	height:18px;
 	font-size:12px;
@@ -132,7 +133,7 @@
 }
 .modify-window{
 	width:100%;
-	top:5%;
+	top:0%;
 	padding:10px;
 }
 .rti-fare-con{

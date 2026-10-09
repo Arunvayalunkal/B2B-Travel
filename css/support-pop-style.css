@@ -1,0 +1,88 @@
+:root {
+    --b2b-red: #e8173a;
+    --b2b-blue: #2b4fa5;
+    --b2b-ink: #1c2233;
+    --b2b-soft: #f4f6fb;
+    --b2b-green: #1fa855;
+  }
+
+/* ---------- Support modal ---------- */
+  #supportModal .modal-content { border: 0; border-radius: 18px; overflow: hidden; z-index:100000 }
+
+  #supportModal .support-head {
+    background: linear-gradient(120deg, var(--b2b-blue) 0%, #1d3880 100%);
+    color: #fff;
+    padding: 22px 28px;
+    position: relative;
+  }
+  #supportModal .support-head h5 { font-weight: 700; margin: 0; }
+  #supportModal .support-head p  { margin: 4px 0 0; opacity: .85; font-size: .9rem; }
+  #supportModal .support-head .btn-close { position: absolute; top: 18px; right: 18px; filter: invert(1); opacity: .9; }
+
+  #supportModal .status-pill {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(255,255,255,.15); border-radius: 50px;
+    padding: 3px 12px; font-size: .78rem; margin-top: 10px;
+  }
+  #supportModal .status-dot {
+    width: 8px; height: 8px; border-radius: 50%; background: #4cf08a;
+    box-shadow: 0 0 0 0 rgba(76,240,138,.7); animation: ping 1.8s infinite;
+  }
+  @keyframes ping { 70% { box-shadow: 0 0 0 8px rgba(76,240,138,0); } 100% { box-shadow: 0 0 0 0 rgba(76,240,138,0); } }
+  @media (prefers-reduced-motion: reduce) { #supportModal .status-dot { animation: none; } }
+
+  #supportModal .modal-body { background: var(--b2b-soft); padding: 24px 28px; }
+
+  /* Account manager card */
+  .am-card {
+    background: #fff; border-radius: 14px; padding: 20px;
+    border-left: 5px solid var(--b2b-red);
+    box-shadow: 0 4px 16px rgba(28,34,51,.06);
+  }
+  .am-avatar {
+    width: 64px; height: 64px; border-radius: 50%; flex: none;
+    background: var(--b2b-red); color: #fff; font-weight: 700; font-size: 1.4rem;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .am-card .am-name { font-weight: 700; color: var(--b2b-ink); font-size: 1.1rem; margin: 0; }
+  .am-card .am-role { color: #6b7385; font-size: .85rem; }
+  .am-card .am-line { font-size: .92rem; color: var(--b2b-ink); text-decoration: none; }
+  .am-card .am-line i { color: var(--b2b-red); width: 22px; display: inline-block; }
+  .am-card a.am-line:hover { color: var(--b2b-red); }
+
+  .btn-b2b-call  { background: var(--b2b-red); color: #fff; border: 0; }
+  .btn-b2b-call:hover  { background: #c91230; color: #fff; }
+  .btn-b2b-wa    { background: var(--b2b-green); color: #fff; border: 0; }
+  .btn-b2b-wa:hover    { background: #17883f; color: #fff; }
+
+  /* Helpdesk channel tiles */
+  .channel {
+    display: flex; align-items: center; gap: 14px; height: 100%;
+    background: #fff; border-radius: 12px; padding: 14px 16px;
+    text-decoration: none; color: var(--b2b-ink);
+    border: 1px solid #e3e7f1; transition: border-color .15s, box-shadow .15s;
+  }
+  .channel:hover { border-color: var(--b2b-blue); box-shadow: 0 4px 14px rgba(43,79,165,.12); color: var(--b2b-ink); }
+  .channel .ch-icon {
+    width: 44px; height: 44px; border-radius: 12px; flex: none;
+    display: flex; align-items: center; justify-content: center; font-size: 1.25rem;
+  }
+  .channel small { display: block; color: #6b7385; font-size: .75rem; }
+  .channel strong { font-size: .95rem; word-break: break-word; }
+
+  .section-title { font-weight: 700; color: var(--b2b-ink); font-size: .95rem; margin: 22px 0 10px; }
+  .section-title:first-child { margin-top: 0; }
+
+  /* Hours + quick links */
+  .info-box { background: #fff; border-radius: 12px; padding: 14px 16px; border: 1px solid #e3e7f1; height: 100%; }
+  .info-box ul { list-style: none; padding: 0; margin: 0; font-size: .88rem; }
+  .info-box li { display: flex; justify-content: space-between; padding: 4px 0; }
+  .info-box li span:first-child { color: #6b7385; }
+  .quick-link { display: flex; align-items: center; gap: 8px; padding: 5px 0; font-size: .9rem; color: var(--b2b-blue); text-decoration: none; }
+  .quick-link:hover { color: var(--b2b-red); }
+
+  #supportModal .modal-footer { background: #fff; border-top: 1px solid #e3e7f1; font-size: .8rem; color: #6b7385; justify-content: center; }
+
+  /* Top bar link used for demo */
+  .top-link { color: var(--b2b-ink); text-decoration: none; font-size: .9rem; }
+  .top-link:hover { color: var(--b2b-red); }
