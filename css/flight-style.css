@@ -1161,6 +1161,20 @@
             font-size: 12px;
         }
 
+.fare-row{cursor:pointer;background:var(--bs-body-bg);border:1px solid var(--bs-border-color);
+  border-radius:.75rem;padding:.75rem 1rem;transition:border-color .15s, background-color .15s}
+.fare-row:hover{border-color:var(--bs-secondary-border-subtle)}
+.fare-row.selected{border:2px solid var(--bs-primary);background:var(--bs-primary-bg-subtle);padding:calc(.75rem - 1px) calc(1rem - 1px)}
+.fare-row:focus-visible{outline:2px solid var(--bs-primary);outline-offset:2px}
+
+.fare-radio{width:16px;height:16px;border-radius:50%;border:1.5px solid var(--bs-secondary-color);
+  display:inline-flex;align-items:center;justify-content:center;flex:none}
+.selected .fare-radio{background:var(--bs-primary);border-color:var(--bs-primary)}
+.selected .fare-radio::after{content:"";width:6px;height:6px;border-radius:50%;background:#fff}
+
+.mlabel{display:block;font-size:.7rem;color:var(--bs-secondary-color)}
+@media (min-width:768px){.mlabel{display:none}}		
+		
         /* Responsive */
         @media (max-width: 767px) {
 
@@ -1180,3 +1194,44 @@
                 margin-bottom: 6px;
             }
         }
+		
+.status-box { border: 1px solid; border-radius: .5rem; padding: .75rem 1rem; }
+    .status-box .status-title { font-weight: 700; font-size: 1.05rem; margin-bottom: .125rem; }
+    .status-box .status-text  { color: #212529; font-size: .85rem; margin-bottom: 0; }
+
+    .status-icon {
+      flex: 0 0 auto;
+      width: 2.25rem; height: 2.25rem;
+      border-radius: 50%;
+      display: inline-flex; align-items: center; justify-content: center;
+      color: #fff;
+    }
+    .status-icon svg { width: 1.2rem; height: 1.2rem; }
+
+    /* Success */
+    .status-success { background: #e3f6e6; border-color: #1f8a2e; }
+    .status-success .status-title { color: #17781f; }
+    .status-success .status-icon  { background: #0f7a1a; }
+
+    /* Warning */
+    .status-warning { background: #fff3d9; border-color: #f4b223; }
+    .status-warning .status-title { color: #8a3c05; }
+    .status-warning .status-icon  { background: #fba90a; }
+    .fare-label   { color: #495057; font-size: .8rem; }
+    .fare-old     { color: #495057; font-weight: 700; font-size: 1.1rem; text-decoration: line-through; }
+    .fare-new     { color: #e8101f; font-weight: 700; font-size: 1.25rem; }
+    .fare-divider { width: 1px; background: #ced4da; align-self: stretch; }
+
+    /* Danger */
+    .status-danger { background: #fde8ea; border-color: #e6283c; }
+    .status-danger .status-title { color: #d90f22; }
+    .status-danger .status-icon  { background: #e8101f; }
+
+    /* Buttons */
+    .btn-brand-red { --bs-btn-color: #fff; --bs-btn-bg: #ec1c36; --bs-btn-border-color: #ec1c36;
+      --bs-btn-hover-color: #fff; --bs-btn-hover-bg: #c9142b; --bs-btn-hover-border-color: #c9142b;
+      --bs-btn-active-bg: #b01125; --bs-btn-active-border-color: #b01125;
+      font-weight: 600; font-size: .85rem; padding: .4rem 1rem; border-radius: .4rem; }
+    .btn-brand-outline { --bs-btn-color: #0d4fd6; --bs-btn-bg: #fff; --bs-btn-border-color: #0d4fd6;
+      --bs-btn-hover-color: #fff; --bs-btn-hover-bg: #0d4fd6; --bs-btn-hover-border-color: #0d4fd6;
+      font-weight: 600; font-size: .85rem; padding: .4rem 1rem; border-radius: .4rem; }

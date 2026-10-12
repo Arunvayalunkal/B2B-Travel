@@ -168,16 +168,97 @@
                     </div>
                     <div class="fd-btm p-2">
                     	<div class="row">
-                        	<div class="col-lg-6">
+                        	<div class="col-lg-9">
                             	<div class="fd-baggage opacity-75">Baggage : 7kg (Cabin)  |  15kg(Check-in)</div>
                             </div>
-                            <div class="col-lg-6"></div>
+                            <div class="col-lg-3">
+								<button type="button"
+        class="btn btn-outline-primary btn-sm py-1 px-2"
+        style="font-size: 11px;">
+    <i class="bi bi-arrow-clockwise me-1"></i>
+    Reconfirm Itinerary
+</button>
+							</div>
                         </div>
                     </div>
                  </div>
                  <!-- List row section ends here-->
-				 
-                 
+				 <div class="pt-3">
+				  <!-- 1. Itinerary confirmed -->
+    <div class="status-box status-success d-flex align-items-center gap-2 mb-2" role="alert">
+      <span class="status-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="4 12.5 9.5 18 20 6.5"/>
+        </svg>
+      </span>
+      <div>
+        <h2 class="status-title">Itinerary confirmed</h2>
+        <p class="status-text">Flight details and fare are still valid. You can continue with the booking.</p>
+      </div>
+    </div>
+
+    <!-- 2. Fare has changed -->
+    <div class="status-box status-warning mb-2" role="alert">
+      <div class="row align-items-center g-2">
+        <div class="col-12 col-lg">
+          <div class="d-flex align-items-start gap-2">
+            <span class="status-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.5 1.5 21h21L12 2.5Zm-1.1 7.5h2.2l-.4 6h-1.4l-.4-6Zm1.1 8.9a1.3 1.3 0 1 1 0-2.6 1.3 1.3 0 0 1 0 2.6Z"/>
+              </svg>
+            </span>
+            <div class="flex-grow-1">
+              <h2 class="status-title">Fare has changed</h2>
+              <p class="status-text mb-1">The fare for this itinerary has been updated by the supplier.</p>
+              <div class="d-flex gap-3 gap-md-4">
+                <div>
+                  <div class="fare-label">Previous fare</div>
+                  <div class="fare-old">₹6,628</div>
+                </div>
+                <div class="fare-divider d-none d-sm-block"></div>
+                <div>
+                  <div class="fare-label">Updated fare</div>
+                  <div class="fare-new">₹6,928</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-auto">
+          <div class="d-flex flex-column flex-sm-row gap-2">
+            <button type="button" class="btn btn-brand-red">Accept New Fare</button>
+            <button type="button" class="btn btn-brand-outline">Search Again</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Flight is no longer available -->
+    <div class="status-box status-danger mb-2" role="alert">
+      <div class="row align-items-center g-2">
+        <div class="col-12 col-lg">
+          <div class="d-flex align-items-center gap-2">
+            <span class="status-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+                <line x1="5" y1="5" x2="19" y2="19"/>
+                <line x1="19" y1="5" x2="5" y2="19"/>
+              </svg>
+            </span>
+            <div>
+              <h2 class="status-title">Flight is no longer available</h2>
+              <p class="status-text">
+                This itinerary is no longer available with the current fare.<br>
+                Please search again for other available flights.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-auto">
+          <button type="button" class="btn btn-brand-red w-100">Search Again</button>
+        </div>
+      </div>
+    </div>
+     </div>            
 				  <!-- Passengers -->
         <section class="mb-4">
           <div class="h5 fw-bold mt-4">Passenger details</div>
@@ -285,7 +366,14 @@
             <p class="small fw-medium mt-1">© 2025 B2Btravel.com – All rights reserved</p>
         </div>
         <div class="col-lg-8 col-12 text-lg-end">
-        	<div class="mt-lg-4"><a href="#">Company</a>        <a href="#">Products </a>       <a href="#">Contact</a>        <a href="#">FAQ</a></div>
+		<!-- Social icons -->
+        <ul class="list-unstyled d-flex justify-content-center justify-content-md-end gap-2 mb-0">
+            <li><a href="https://www.facebook.com/B2BTravelAgency/" target="_blank" class="social-link facebook" aria-label="Facebook"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/b2b_travel_agency/" target="_blank" class="social-link instagram" aria-label="Instagram"><i class="bi bi-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/b2btravelagency/" target="_blank" class="social-link linkedin" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
+           
+          </ul>
+        	<div class="mt-lg-1"><a href="#">Company</a>        <a href="#">Products </a>       <a href="#">Contact</a>        <a href="#">FAQ</a></div>
             <div class="mt-2 small">
             <a href="#">Privacy Policy</a> | <a href="#">Disclaimer</a> | <a href="#">Terms & Conditions</a> | <a href="#">User Agreement</a> | <a href="#">Copyright Information's</a>
             </div>
