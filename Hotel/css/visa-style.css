@@ -1,0 +1,1340 @@
+body{
+	background-color:#ffffff;
+}
+.header{
+	background-color:#ffffff;
+}
+.shadow-sm {
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.21) !important;
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.21) !important;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.21) !important;
+}
+.list-bnr {
+    min-height: 100px;
+    background-color: #1150a0;
+}
+.holiday-mod-desti {
+    background: #fff url(../images/location.svg) no-repeat left 10px top 10px !important;
+    background-size: 40px !important;
+    padding: 15px 8px 8px 60px !important;
+    font-size: 22px;
+    font-weight: 700;
+}
+.holiday-mod-date {
+    background: #fff url(../images/calendar.svg) no-repeat left 2px center !important;
+    background-size: 40px !important;
+    padding: 12px 8px 8px 50px !important;
+    font-weight: 700;
+    border: 0px;
+}
+.close-btn {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 1001;
+}
+.ui-slider {
+    background-color: #CCC;
+}
+.ui-slider-handle {
+    background-color: #F51253 !important;
+    width: 22px !important;
+    height: 22px !important;
+    border-radius: 20px !important;
+    border: 0px !important;
+    outline: none !important;
+}
+.search-section {
+    background: #d0202e;
+    background-size: cover;
+    min-height: 242px;
+}
+.search-section h1 {
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+.home-white-bg {
+    background-color: #fff;
+    border-radius: 40px;
+    padding: 30px 30px 30px 30px;
+}
+/*mobile select pop style*/
+.com-pop-window{
+		position:absolute;
+		top:80px;
+		left:0px;
+		background-color:#FFF;
+		z-index:10000;
+		width:350px;
+		-webkit-animation: animateWindow .3s linear forwards;
+	-moz-animation: animateWindow .3s linear forwards;
+	animation: animateWindow .3s linear forwards;
+	display:none;
+	}
+	@-webkit-keyframes animateWindow {
+ 0% {
+ opacity:0;
+ top:50px;
+}
+ 100% {
+ opacity:1;
+ top:30px;
+}
+}
+ @-moz-keyframes animateWindow {
+0% {
+ opacity:0;
+ top:50px;
+}
+ 100% {
+ opacity:1;
+ top:30px;
+}
+}
+ @keyframes animateWindow {
+ 0% {
+ opacity:0;
+ top:50px;
+}
+ 100% {
+ opacity:1;
+ top:30px;
+}
+}
+#calendar_pop_dep, #calendar_pop_rtn{
+	overflow-x:hidden;
+	height:400px;
+}
+.back-arrow{
+	width:30px;
+	height:30px;
+	background:url(../images/back-arrow-black.svg) no-repeat center center;
+	background-size:22px ;
+	cursor:pointer;
+	margin-top:5px;
+}
+.back-arrow-fdtls{
+	position:absolute;
+	width:40px;
+	height:48px;
+	left:0;
+	top:0;
+	background:url(../images/left-arrow.svg) no-repeat left 10px center;
+	background-size:20px ;
+	z-index:1001;
+	cursor:pointer;
+}
+.pop-fix-top{
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	z-index:1000;
+}
+.pophead{
+	background-color:#fff;
+	font-size:18px;
+	font-weight:500;
+	color:#000;
+	padding:10px 10px 10px 45px;
+	position:relative;
+	display:none;
+}
+.popserch-wrap{
+	background-color:#f5f5f5;
+	padding:10px;
+}
+.popserch-wrap .form-control{
+	border:0px;
+	height:40px;
+	font-size:14px;
+	padding-left:10px;
+	font-weight:600;
+}
+.com-pop-window .list-group{
+	overflow-y:scroll;
+	height:343px;
+	margin-top:59px;
+}
+.com-pop-window .list-group-pair{
+	overflow-y:scroll;
+	height:123px;
+	margin-top:0px;
+	border-radius:0px;
+}
+.com-pop-window .list-group-item{
+	border-radius:0px;
+	cursor:pointer;
+	padding-left:30px;
+	position:relative;
+}
+
+.navbar{
+	z-index:10000;
+}
+.holiday-search-section{
+	background-size:cover;
+}
+.holiday-search-con-inner {
+    position: relative;
+}
+.search-section-holiday {
+    background: #F51253;
+    background-size: cover;
+    min-height: 150px;
+}
+.holiday-s-btn-width{
+	height:4.2rem;
+	margin-top:26px !important;
+	margin-left:11px;
+}
+
+.holiday-search-con{
+	position:relative;
+	margin-top:0px;
+	
+}
+.holiday-search-con-inner{
+	position:relative;
+	
+}
+.holiday-search-wrap{
+	position:absolute;
+	top:0px;
+	left:0px;
+	right:0px;
+	background-color:transparent;
+	z-index:1000;
+}
+.holiday-search-con-inner .holiday-search-wrap{
+	top:10%;
+}
+.holiday-search-wrap .form-control{
+	border-color:#727483;
+	height:3rem;
+	padding-left:40px;
+	box-shadow:none;
+	background-color:#fff;
+}
+.holiday-search-wrap .form-control::placeholder{
+	color:#333;
+}
+.holiday-search-wrap .nav-link{
+	padding:13px 22px;
+}
+.holiday-desti {
+    background: #f9f9f9 url(../images/location.svg) no-repeat left 10px center !important;
+    background-size: 30px !important;
+    color: #000;
+    height: 55px !important;
+    padding: 18px 15px 18px 50px !important;
+    border-color: #ecedf3 !important;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+}
+.holiday-date {
+    background: #f9f9f9 url(../images/calendar.svg) no-repeat left 10px center !important;
+    background-size: 30px !important;
+    color: #000;
+    height: 55px !important;
+    padding: 18px 15px 18px 50px !important;
+    border:1px #ecedf3 solid !important;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+}
+.holiday-s-btn {
+    height: 55px;
+    width: 100%;
+    font-size: 22px;
+}
+.carousel-caption {
+  top: 5%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0);
+  z-index: 1;
+}
+.holiday-carousel h1{
+	font-size:40px;
+	color:#15155c !important;
+}
+.com-pop-window{
+	left:20px;
+	width:94%;
+}
+.cal-pop-window{
+	left:15px;
+}
+.list-group-item.flight-icon::before{
+	background: url(../images/location.svg) no-repeat center center;
+    background-size: 15px;
+	
+}
+.list-group-item.flight-icon:hover::before{
+	background: url(../images/location.svg) no-repeat center center;
+    background-size: 15px;
+	
+}
+.offers-con h4{
+	color:#000;
+}
+.offers-con h5{
+	color:#be1e2d;
+}
+.holiday-pack{
+	border-top:0px;
+}
+.red-text{
+	color:#F51253;
+}
+.package-item {
+    transition: .5s;
+	box-shadow: 0 0 2px #CCCCCC;
+}
+.package-item:hover {
+  box-shadow: 0 0 30px #CCCCCC;
+}
+
+.inclusion{
+	padding:0px;
+	margin:0px;
+	list-style:none;
+}
+.inclusion li.y{
+	background:url(../images/holidays/check-red.svg) no-repeat left center;
+	background-size:16px;
+	padding:3px 0px 3px 22px;
+	font-size:18px;
+	float:left;
+	margin-right:10px;
+	margin-bottom:15px;
+}
+.inclusion li.n{
+	background:url(../images/holidays/close-red.svg) no-repeat left -4px center;
+	background-size:28px;
+	padding:3px 0px 3px 24px;
+	font-size:18px;
+	float:left;
+	margin-right:10px;
+	margin-bottom:15px;
+}
+
+/*package slider style*/
+
+.holiday-slider {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  border-radius: 3px;
+  position: relative;
+}
+.holiday-slider .owl-nav, .holiday-slider .owl-dots {
+  display: none;
+}
+.holiday-slider:hover .left {
+  visibility: visible;
+  opacity: 1;
+  left: 20px;
+}
+.holiday-slider:hover .right {
+  visibility: visible;
+  opacity: 1;
+  right: 20px;
+}
+.holiday-slider .item-box {
+  padding: 20px;
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  border-radius: 15px;
+  background: no-repeat url(http://www.cyw51.com/file/upload/201302/22/18-49-19-74-127.jpg) center center;
+  background-size: cover;
+}
+.holiday-slider .item-box:after {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  content: "";
+  display: block;
+  
+}
+.holiday-slider .left {
+  position: absolute;
+  z-index: 1;
+  top: 167px;
+  left: -20px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: all ease 0.25s;
+  transform: rotate(0deg);
+  background: url(http://svgshare.com/i/2V9.svg) top left;
+}
+.holiday-slider .left:hover {
+  visibility: visible;
+  opacity: 1;
+  left: 20px;
+  background: url(http://svgshare.com/i/2UW.svg) top left;
+  transform: rotate(180deg);
+}
+.holiday-slider .left.nonl {
+  left: -20px;
+  opacity: 0;
+  visibility: hidden;
+}
+.holiday-slider .right {
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  top: 167px;
+  right: -20px;
+  width: 40px;
+  height: 40px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all ease 0.25s;
+  background: url(http://svgshare.com/i/2V9.svg) top left;
+  transform: rotate(180deg);
+}
+.holiday-slider .right:hover {
+  visibility: visible;
+  opacity: 1;
+  right: 20px;
+  background: url(http://svgshare.com/i/2UW.svg) top left;
+  transform: rotate(0deg);
+}
+.holiday-slider .right.nonr {
+  right: -20px;
+  opacity: 0;
+  visibility: hidden;
+}
+.slider-two {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+.slider-two .owl-nav, .slider-two .owl-dots {
+  display: none;
+}
+.slider-two:hover .left-t {
+  visibility: visible;
+  opacity: 1;
+  left: 3px;
+}
+.slider-two:hover .right-t {
+  visibility: visible;
+  opacity: 1;
+  right: 3px;
+}
+.slider-two .item {
+  transition: all ease 0.25s;
+  height: 100px;
+  border-radius: 3px;
+  border: solid 3px #e6ecf2;
+  cursor: pointer;
+  background: no-repeat url(http://www.cyw51.com/file/upload/201302/22/18-49-19-74-127.jpg) center center;
+  background-size: cover;
+  border-radius:10px;
+}
+.slider-two .item.active {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+  border: solid 3px #cc2e38;
+}
+.slider-two .owl-stage {
+  padding: 20px 0;
+}
+.slider-two .left-t {
+  transform: rotate(180deg);
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  top: 23px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all ease 0.25s;
+  width: 40px;
+  height: 95px;
+  background: no-repeat rgba(204, 46, 56, 0.85) url(http://svgshare.com/i/2Vs.svg) center center;
+  left: -40px;
+}
+.slider-two .left-t:hover {
+  visibility: visible;
+  opacity: 1;
+  left: 3px;
+}
+.slider-two .left-t.nonl-t {
+  left: -40px;
+  opacity: 0;
+  visibility: hidden;
+}
+.slider-two .right-t {
+  background: no-repeat rgba(204, 46, 56, 0.85) url(http://svgshare.com/i/2Vs.svg) center center;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  top: 23px;
+  right: -40px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all ease 0.25s;
+  width: 40px;
+  height: 95px;
+  background-color: rgba(204, 46, 56, 0.85);
+}
+.slider-two .right-t:hover {
+  visibility: visible;
+  opacity: 1;
+  right: 3px;
+}
+.slider-two .right-t.nonr-t {
+  right: -40px;
+  opacity: 0;
+  visibility: hidden;
+}
+.package-tab .nav-tabs .nav-link{
+	color:#000;
+	text-transform:uppercase;
+	font-size:14px;
+	font-weight:700;
+}
+.package-tab .nav-tabs .nav-link.active{
+	background-color:#1150a0;
+	color:#fff;
+}
+.package-tab .accordion-button:focus{
+	box-shadow:none !important;
+}
+.package-tab .accordion-button{
+	color:#000;
+	font-weight:700;
+	font-size:18px;
+}
+.package-tab .accordion-button:not(.collapsed){
+	color:#000;
+	font-weight:700;
+	font-size:18px;
+}
+.package-tab .accordion-button:not(.collapsed) span.Itinerary-day{
+	background-color:#1150a0;
+	color:#fff;
+	padding:12px 20px 10px 20px;
+	margin-right:10px;
+	border-radius:40px;
+}
+.package-tab .accordion-button span.Itinerary-day{
+	background-color:#999;
+	color:#fff;
+	padding:12px 20px 10px 20px;
+	margin-right:10px;
+	border-radius:40px;
+}
+.package-tab ul{
+	padding:0px;
+	margin:0px;
+	list-style:none;
+}
+.package-tab li{
+	padding:0px 0px 0px 30px;
+	margin:0px 0px 10px 0px;
+	list-style:none;
+	background:url(../images/holidays/check-red.svg) no-repeat left top 5px;
+	background-size:15px;
+}
+.enq-pop-overlay{
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	z-index:10001;
+	background-color:rgba(0,0,0,.5);
+	display:none;
+}
+.enq-pop{
+	position:fixed;
+	top:8%;
+	left:0px;
+	right:0px;
+	width:900px;
+	min-height:400px;
+	background-color:#FFF;
+	z-index:10002;
+	margin:0 auto;
+	padding:15px;
+	display:none;
+	border-radius:20px;
+}
+.enq-head{
+	font-size:25px;
+	font-weight:400;
+	border-bottom:1px #CCCCCC solid;
+	padding:10px 0px 15px 0px;
+}
+.bot-red{
+	color:#B51717;
+}
+.or-txt{
+	width:45px;
+	height:45px;
+	font-size:16px;
+	margin:-40px auto 0 auto;
+	color:#000;
+	text-align:center;
+	border:1px #CCC solid;
+	border-radius:75%;
+	padding:10px;
+	font-weight:600;
+	background-color:#F8F8F8;
+}
+.pop-bg-img{
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;
+	min-height:450px;
+	border-radius:15px;
+	overflow:hidden;
+}
+.pop-bnr-text{
+	min-height:100px;
+	background-color:rgba(0,0,0,.6);
+}
+.enq-pop .form-control{
+	border-radius:10px;
+	height:50px;
+}
+.popup-close{
+	position:absolute;
+	top:3px;
+	right:6px;
+	width:40px;
+	height:40px;
+	background:url(../images/holidays/close-gray.svg) no-repeat center center;
+	background-size:35px;
+	cursor:pointer;
+}
+.tab-mobile-head{
+	display:none;
+}
+.bg-lightyellow{
+	background-color:#FCF1D1;
+}
+.back-ph{
+	width:30px;
+	height:30px;
+	position:absolute;
+	top:-14px;
+	left:0px;
+	cursor:pointer;
+}
+.budget-bx{
+	background-color:#B51717;
+	border-radius:20px;
+	padding:20px;
+	min-height:150px;
+	line-height:48px;
+	cursor:pointer;
+}
+.tripdays{
+	color:#000;
+	border-radius:30px;
+	display:block;
+	padding:15px 15px 15px 60px;
+	background:#fff url(../images/holidays/traveller-holiday.svg) no-repeat left 20px center;
+	background-size:20px;
+	font-weight:700;
+	font-size:22px;
+	position:relative;
+}
+.tripdays::after{
+	content:'';
+	width:40px;
+	height:40px;
+	background:url(../images/holidays/h-right-arrow.svg) no-repeat center center;
+	position:absolute;
+	top:12px;
+	right:10px;
+}
+.holiday-mod-desti{
+	background: #fff url(../images/location.svg) no-repeat left 10px top 10px !important;
+	background-size: 40px !important;
+	padding: 15px 8px 8px 60px !important;
+	font-size: 22px;
+	font-weight:700;
+}
+.holiday-mod-date{
+	background: #fff url(../images/calendar.svg) no-repeat left 2px center !important;
+	background-size: 40px !important;
+	padding: 12px 8px 8px 50px !important;
+	font-weight:700;
+	border:0px;
+}
+.form-check{
+	padding-left:20px;
+}
+.h-inclusion{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+.h-inclusion li{
+	float:left;
+	margin-right:10px;
+	padding-left:20px;
+	background:url(../images/holidays/check-red.svg) no-repeat left center;
+	background-size:10px;
+	font-size:13px;
+}
+.h-loc{
+	background:url(../images/holidays/map-red.svg) no-repeat left center;
+	padding:0px 0px 0px 20px;
+	font-size:16px;
+	color:#000;
+}
+.h-days{
+	background:url(../images/holidays/h-cal-red.svg) no-repeat left center;
+	padding:0px 0px 0px 22px;
+	font-size:16px;
+	color:#000;
+}
+.h-moredtls{
+	background:url(../images/holidays/h-right-arrow.svg) no-repeat right center;
+	background-size:10px;
+	padding:0px 22px 0px 0px;
+	font-size:16px;
+	color:#000;
+	text-align:right;
+	cursor:pointer;
+}
+
+.h-themes{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+.h-themes li{
+	float:left;
+	margin-right:20px;
+	background-size:8px;
+	font-size:18px;
+	margin-bottom:10px;
+	padding:10px 10px 10px 40px
+}
+.h-themes li.adventure{background:url(../images/holidays/adventure-icon.svg) no-repeat left center;}
+.h-themes li.honeymoon{background:url(../images/holidays/honeymoon-icon.svg) no-repeat left center;}
+.h-themes li.family{background:url(../images/holidays/family-icon.svg) no-repeat left center;}
+.h-themes li.romantic{background:url(../images/holidays/romantic-icon.svg) no-repeat left center;}
+
+
+/*date picker style*/
+	.datepicker{
+		padding:0px 0px;
+		border:0px;
+	}
+	.ui-widget.ui-widget-content{
+		border:0px;
+	}
+	.ui-widget-header{
+		
+		border:0px;
+		border-radius:0px;
+		background-color:#ececec;
+		color:#000;
+		font-size:16px;
+		font-weight:600;
+	}
+	.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active{
+		border:0px;
+		width:40px;
+		height:40px;
+		text-align:center;
+		padding-top:12px;
+		margin:0 auto;
+		border-radius:8px;
+	}
+        .dp-highlight .ui-state-default {
+          background: #484;
+          color: #FFF;
+        }
+        .ui-datepicker.ui-datepicker-multi  {
+          width: 100% !important;
+        }
+        .ui-datepicker-multi .ui-datepicker-group {
+        float:none;
+        }
+        #datepicker {
+          height: 300px;
+          overflow-x: scroll;
+        }
+		.ui-widget { font-size: 100% }
+		
+.ui-widget-header{
+		background:#fff; /* Old browsers */
+		color:#000;
+	}
+	.ui-datepicker .ui-datepicker-next{display:none;}
+	.ui-datepicker .ui-datepicker-prev{display:none;}
+	 .ui-datepicker-today .ui-state-highlight{
+		background:#fff!important; /* Old browsers */
+		color:#000 !important;
+		font-weight:bold;
+	}
+	
+	.ui-datepicker-current-day .ui-state-active{
+		background: rgb(255,151,143); /* Old browsers */
+background: -moz-linear-gradient(left, rgba(255,151,143,1) 1%, rgba(255,170,141,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(255,151,143,1) 1%,rgba(255,170,141,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(255,151,143,1) 1%,rgba(255,170,141,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff978f', endColorstr='#ffaa8d',GradientType=1 ); /* IE6-9 */
+	}
+
+.ui-datepicker th{
+	font-weight:600;
+	font-size:13px;
+	color:#666;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active{
+	background-color:transparent;
+}
+.ui-slider-range {
+  background-color: #666;
+}
+.mobile-inner-header {
+    display: none;
+}
+
+
+.banner-con{
+	min-height:480px;
+	background:url(../images/visa/visa-home-banner.jpg) no-repeat center center;
+	background-size:cover;
+}
+.banner-overlay{
+	background-color:rgba(0,0,0,.3);
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+}
+.search-wrap{
+}
+.search-tab{
+	background: rgb(9,40,80);
+	background: linear-gradient(0deg, rgba(9,40,80,1) 0%, rgba(17,80,160,1) 100%);
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	width:397px;
+	overflow:hidden;
+}
+.search-tab ul{
+	list-style:none;
+	padding:0px;
+	margin:0px;
+}
+.search-tab li{
+	float:left;
+	padding:10px 15px;
+	color:#fff;
+	font-size:14px;
+	font-weight:500;
+	text-align:center;
+	border-right:1px #09274E solid;
+	border-left:1px #3A659B solid;
+	cursor:pointer;
+}
+.search-tab li:first-child{
+	border-left:0px;
+}
+.search-tab li:last-child{
+	border-right:0px;
+}
+.search-tab li.active{
+	background:#FFF;
+	color:#000;
+	font-weight:600;
+}
+.search-con{
+	background-color:#FFF;
+	padding:20px;
+	border-radius:10px;
+	min-height:200px;
+
+}
+.s-txt-fld{
+	border-radius:10px;
+	border:1px #ABB7CC solid;
+	padding:15px;
+	min-height:100px;
+	background-color:#FFF;
+	cursor:pointer;
+}
+.s-txt-fld:hover{
+	background-color:#F9F9F9;
+}
+.s-date-fld{
+	border-radius:10px;
+	border:1px #ABB7CC solid;
+	min-height:100px;
+	background-color:#FFF;
+}
+.dlink-left {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.date-link {
+    cursor: pointer;
+    padding: 15px;
+}
+.date-link .h4 {
+    background: url(../images/down-arrow.svg) no-repeat center right;
+    background-size: 12px;
+}
+/*wizard style*/
+.wizard-wrap{
+	min-height:100px;
+	position:relative;
+}
+.wizard-line{
+	position:absolute;
+	top:19px;
+	left:0px;
+	right:0px;
+	width:92%;
+	height:1px;
+	border-bottom:2px #ABB7CC solid;
+	z-index:90;
+	margin:0 auto;
+}
+.wizard-line-completed{
+	position:absolute;
+	top:19px;
+	left:50px;
+	right:0px;
+	height:1px;
+	border-bottom:2px #104C98 solid;
+	z-index:91;
+}
+.wizard-con{
+	position:relative;
+	z-index:100;
+}
+.wizard-con ul{
+	list-style:none;
+	padding:0px;
+	margin:0px;
+}
+.wizard-con ul li{
+	float:left;
+	padding:0px;
+	margin:0px 75px 0px 0px;
+	width:123px;
+}
+
+.w-default-tick{
+	width:40px;
+	height:40px;
+	border-radius:75%;
+	border:2px #ABB7CC solid;
+	background-color:#FFF;
+	margin:0 auto;
+	padding:6px;
+	display:block;
+	text-align:center;
+}
+.w-completed-tick{
+	background: rgb(9,40,80);
+	background: linear-gradient(0deg, rgba(9,40,80,1) 0%, rgba(17,80,160,1) 100%);
+	border:0px;
+	padding:7px;
+	text-align:center;
+}
+.w-active-tick{
+	border:2px #104C98 solid;
+	padding:6px;
+}
+.ms-con{
+	border:1px #b2bbcb solid;
+	border-radius:6px;
+	min-height:20px;
+}
+.ms-brd-right{
+	border-right:1px #b2bbcb solid;
+}
+.ms-con .small{
+	font-size:12px;
+	margin-bottom:3px;
+	color:#000;
+	font-weight:500;
+}
+.ms-con .h6{
+	font-size:14px;
+}
+.ms-btn{
+	border:0px;
+	padding:15px 0px;
+	text-align:center;
+	width:100%;
+	color:#104A94;
+	font-weight:500;
+}
+.ms-btn:hover{
+	color:#104A94;
+}
+.share-icons{
+	cursor:pointer;
+	display:inline-block;
+	margin:0 6px;
+}
+/*filter style*/
+.filter-con{
+	border:1px #b2bbcb solid;
+	border-radius:8px;
+	min-height:400px;
+	font-size:14px;
+	background-color:#fff;
+	
+}
+.fltr-row{
+	border-bottom:1px #b2bbcb solid;
+}
+.clear-fltr-link{
+	cursor:pointer;
+}
+.fltr-row-head{
+	font-size:14px;
+	font-weight:600;
+	cursor:pointer;
+	background:url(../images/down-arrow.svg) no-repeat center right;
+	background-size:15px;
+}
+.fltr-row .s-f-check {
+    width: 25px;
+    height: 25px;
+}
+.fltr-row .form-check-label {
+    margin-left: 10px;
+    margin-top: 8px;
+    font-size: 14px;
+}
+/*range slider style*/
+.slider-con{
+	position:relative;
+	min-height:70px;
+}
+.rangebar{
+	position:absolute;
+	width:100%;
+	height:2px;
+	background-color:#0F468D;
+	top:22px;
+	left:0px;
+	z-index:10;
+}
+.range-handler{
+	width:20px;
+	height:20px;
+	border:2px #0F468D solid;
+	border-radius:75%;
+	position:absolute;
+	top:13px;
+	background-color:#fff;
+	z-index:20;
+}
+.handler-left{
+	left:0px;
+}
+.handler-right{
+	right:0px;
+}
+.range-con{
+	position:absolute;
+	bottom:8px;
+	left:0px;
+	width:100%;
+	font-weight:600;
+}
+.min-range{
+	font-size:14px;
+}
+.max-range{
+	font-size:14px;
+}
+/*modify search pop*/
+.modify-overlay{
+	background-color:rgba(255,255,255,.8);
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	z-index:9999;
+	display:none;
+}
+.modify-window{
+	position:fixed;
+	top:20%;
+	left:0px;
+	right:0px;
+	margin:0 auto;
+	width:80%;
+	min-height:200px;
+	z-index:10000;
+	padding:0px;
+	border-radius:10px;
+	display:none;
+}
+.mod-search{
+	width:400px;
+	margin:0 auto;
+}
+
+.sr-list {
+    background-color: #fff;
+    border: 1px #b2bbcb solid;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+}
+/*package slider style*/
+
+.holiday-slider {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  border-radius: 3px;
+  position: relative;
+}
+.holiday-slider .owl-nav, .holiday-slider .owl-dots {
+  display: none;
+}
+.holiday-slider:hover .left {
+  visibility: visible;
+  opacity: 1;
+  left: 20px;
+}
+.holiday-slider:hover .right {
+  visibility: visible;
+  opacity: 1;
+  right: 20px;
+}
+.holiday-slider .item-box {
+  padding: 20px;
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  border-radius: 15px;
+  background: no-repeat url(http://www.cyw51.com/file/upload/201302/22/18-49-19-74-127.jpg) center center;
+  background-size: cover;
+}
+.holiday-slider .item-box:after {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  content: "";
+  display: block;
+  
+}
+.holiday-slider .left {
+  position: absolute;
+  z-index: 1;
+  top: 167px;
+  left: -20px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: all ease 0.25s;
+  transform: rotate(0deg);
+  background: url(http://svgshare.com/i/2V9.svg) top left;
+}
+.holiday-slider .left:hover {
+  visibility: visible;
+  opacity: 1;
+  left: 20px;
+  background: url(http://svgshare.com/i/2UW.svg) top left;
+  transform: rotate(180deg);
+}
+.holiday-slider .left.nonl {
+  left: -20px;
+  opacity: 0;
+  visibility: hidden;
+}
+.holiday-slider .right {
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  top: 167px;
+  right: -20px;
+  width: 40px;
+  height: 40px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all ease 0.25s;
+  background: url(http://svgshare.com/i/2V9.svg) top left;
+  transform: rotate(180deg);
+}
+.holiday-slider .right:hover {
+  visibility: visible;
+  opacity: 1;
+  right: 20px;
+  background: url(http://svgshare.com/i/2UW.svg) top left;
+  transform: rotate(0deg);
+}
+.holiday-slider .right.nonr {
+  right: -20px;
+  opacity: 0;
+  visibility: hidden;
+}
+.slider-two {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+.slider-two .owl-nav, .slider-two .owl-dots {
+  display: none;
+}
+.slider-two:hover .left-t {
+  visibility: visible;
+  opacity: 1;
+  left: 3px;
+}
+.slider-two:hover .right-t {
+  visibility: visible;
+  opacity: 1;
+  right: 3px;
+}
+.slider-two .item {
+  transition: all ease 0.25s;
+  height: 100px;
+  border-radius: 3px;
+  border: solid 3px #e6ecf2;
+  cursor: pointer;
+  background: no-repeat url(http://www.cyw51.com/file/upload/201302/22/18-49-19-74-127.jpg) center center;
+  background-size: cover;
+  border-radius:10px;
+}
+.slider-two .item.active {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+  border: solid 3px #cc2e38;
+}
+.slider-two .owl-stage {
+  padding: 20px 0;
+}
+.slider-two .left-t {
+  transform: rotate(180deg);
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  top: 23px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all ease 0.25s;
+  width: 40px;
+  height: 95px;
+  background: no-repeat rgba(204, 46, 56, 0.85) url(http://svgshare.com/i/2Vs.svg) center center;
+  left: -40px;
+}
+.slider-two .left-t:hover {
+  visibility: visible;
+  opacity: 1;
+  left: 3px;
+}
+.slider-two .left-t.nonl-t {
+  left: -40px;
+  opacity: 0;
+  visibility: hidden;
+}
+.slider-two .right-t {
+  background: no-repeat rgba(204, 46, 56, 0.85) url(http://svgshare.com/i/2Vs.svg) center center;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  top: 23px;
+  right: -40px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all ease 0.25s;
+  width: 40px;
+  height: 95px;
+  background-color: rgba(204, 46, 56, 0.85);
+}
+.slider-two .right-t:hover {
+  visibility: visible;
+  opacity: 1;
+  right: 3px;
+}
+.slider-two .right-t.nonr-t {
+  right: -40px;
+  opacity: 0;
+  visibility: hidden;
+}
+.inner-banner {
+    background-size: cover;
+    min-height: 300px;
+    padding-top: 40px;
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+.inner-bnr-title {
+    font-size: 35px;
+    color: #000;
+}
+.inner-bnr-title span {
+    font-weight: 800;
+    font-size: 45px;
+}
+.inner-con {
+    min-height: 630px;
+	padding-bottom:30px;
+}
+.vsideform{
+	background-color:#f3f3f3;
+	padding:20px;
+	border-radius:10px;
+}
+.vsideform label{
+	font-size:16px;
+	font-weight:400;
+	margin:8px 0px 4px 0px;
+}
+.vsidehead{
+	text-align:left;
+	font-size:25px;
+	color:#1150a0;
+	font-weight:800;
+	border-bottom:1px #d3dee3 solid;
+	margin-bottom:10px;
+	padding-bottom:6px;
+}
+.dwn-chklist-btn{
+	color:#F51253;
+	background:url(../images/visa/download.svg) no-repeat center left;
+	padding-left:50px;
+	font-weight:500;
+	font-size:18px;
+	cursor:pointer;
+}
+.dwn-chklist-btn:hover{
+	color:#F51253;
+}
+.nav-link.active:hover{
+	color:#fff !important;
+}

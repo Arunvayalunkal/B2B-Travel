@@ -1,0 +1,59 @@
+@media (max-width: 480px) {
+	.filter-con{
+	display:none;
+	position:fixed;
+	top:0px;
+	right:0px;
+	width:280px;
+	height:100%;
+	z-index:10000;
+	overflow:scroll;
+	border:0px;
+	border-radius:0px;
+}
+.modify-btn {
+    width: 26px;
+    height: 18px;
+    font-size: 12px;
+    background: url(../images/edit.svg) no-repeat center right;
+    background-size: auto;
+    background-size: 21px;
+    cursor: pointer;
+	margin:3px auto 0 auto;
+  }
+ .filter-btn {
+    width: 26px;
+    height: 18px;
+    font-size: 12px;
+    background: url(../images/filter.svg) no-repeat center right;
+    background-size: auto;
+    background-size: 21px;
+    cursor: pointer;
+	margin:3px auto 0 auto;
+  }
+  .mod-search {
+  width: 403px;
+}
+.modify-window{
+	width:100%;
+}
+.enq-pop {
+    width: 400px;
+	top: 5%;
+  }
+ .pop-bg-img {
+    min-height: 200px;
+  }
+   .popup-close {
+    top: 0px;
+    right: 0px;
+    width: 30px;
+    height: 30px;
+    background-size: 24px;
+  }
+  .back-ph {
+    width: 20px;
+    height: 20px;
+    top: 3px;
+  }
+}
