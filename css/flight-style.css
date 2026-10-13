@@ -1162,11 +1162,11 @@
         }
 
 .fare-row{cursor:pointer;background:var(--bs-body-bg);border:1px solid var(--bs-border-color);
-  border-radius:.75rem;padding:.75rem 1rem;transition:border-color .15s, background-color .15s}
+  border-radius:.35rem;padding:.35rem .55rem;transition:border-color .15s, background-color .15s; font-size:13px;}
 .fare-row:hover{border-color:var(--bs-secondary-border-subtle)}
-.fare-row.selected{border:2px solid var(--bs-primary);background:var(--bs-primary-bg-subtle);padding:calc(.75rem - 1px) calc(1rem - 1px)}
+.fare-row.selected{border:2px solid var(--bs-primary);background:var(--bs-primary-bg-subtle);padding:calc(.35rem - 1px) calc(.5rem - .5px)}
 .fare-row:focus-visible{outline:2px solid var(--bs-primary);outline-offset:2px}
-
+.fare-row .fs-5{font-size: 1rem !important;}
 .fare-radio{width:16px;height:16px;border-radius:50%;border:1.5px solid var(--bs-secondary-color);
   display:inline-flex;align-items:center;justify-content:center;flex:none}
 .selected .fare-radio{background:var(--bs-primary);border-color:var(--bs-primary)}
