@@ -1247,3 +1247,67 @@
     .btn-brand-outline { --bs-btn-color: #0d4fd6; --bs-btn-bg: #fff; --bs-btn-border-color: #0d4fd6;
       --bs-btn-hover-color: #fff; --bs-btn-hover-bg: #0d4fd6; --bs-btn-hover-border-color: #0d4fd6;
       font-weight: 600; font-size: .85rem; padding: .4rem 1rem; border-radius: .4rem; }
+	  
+	  
+/* Fare toggle styles */
+
+.fare-card {
+      max-width: 260px;
+      background: #fff;
+      border: 1px solid #dee2e6;
+      border-radius: 18px;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+.fare-label { font-weight: 700; font-size: .95rem; color: #111; }
+    .fare-status {
+      font-weight: 600;
+      min-width: 80px;
+      font-size: .85rem;
+      color: #6c757d;
+      transition: color .25s;
+    }
+
+    /* Toggle */
+    .fare-toggle {
+      position: relative;
+      width: 40px;
+      height: 22px;
+      border: 0;
+      border-radius: 11px;
+      background: #ced4da;
+      cursor: pointer;
+      padding: 0;
+      transition: width .3s ease, background-color .3s ease;
+    }
+    .fare-toggle:focus-visible { outline: 3px solid rgba(25,135,84,.4); outline-offset: 2px; }
+
+    .fare-toggle .knob {
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: #fff;
+      box-shadow: 0 1px 3px rgba(0,0,0,.3);
+      transition: left .3s ease, box-shadow .3s ease;
+    }
+
+    /* State: offer */
+    .fare-toggle[data-state="offer"] { background: #16a34a; }
+    .fare-toggle[data-state="offer"] .knob { left: 21px; }
+
+    /* State: commission (wider toggle) */
+    .fare-toggle[data-state="commission"] { background: #16a34a; width: 58px; }
+    .fare-toggle[data-state="commission"] .knob {
+      left: 39px;
+      box-sizing: border-box;
+      background: #16a34a;
+      border: 3px solid #fff;
+    }
+
+    .fare-status[data-state="offer"],
+    .fare-status[data-state="commission"] { color: #16a34a; }

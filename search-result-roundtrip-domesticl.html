@@ -202,6 +202,17 @@
                             	
                                 
                             </div>
+							<div class="fltr-row p-2">
+								<div class="fare-card">
+      <span class="fare-label">Fare:</span>
+      <span id="fareStatus" class="fare-status" data-state="publish">Publish</span>
+      <button id="fareToggle" class="fare-toggle" type="button"
+              role="switch" aria-checked="false" aria-label="Fare mode"
+              data-state="publish">
+        <span class="knob"></span>
+      </button>
+    </div>
+							</div>
                             <div class="fltr-row p-2">
                             	<div class="fltr-row-head" data-bs-toggle="collapse" href="#fare" role="button" aria-expanded="false" aria-controls="fare">Fare</div>
                                 <div class="collapse show" id="fare">
@@ -1391,6 +1402,21 @@
      <script src="js/jquery-3.6.0.js"></script>
      
     <script src="js/custom.js"></script>
-    
+     <script>
+    $(function () {
+      // click order: publish -> offer -> commission -> publish
+      var states = ['publish', 'offer', 'commission'];
+      var labels = { publish: 'Publish', offer: 'Offer', commission: 'Commission' };
+      var index = 0;
+
+      $('#fareToggle').on('click', function () {
+        index = (index + 1) % states.length;
+        var state = states[index];
+
+        $(this).attr({ 'data-state': state, 'aria-checked': state !== 'publish' });
+        $('#fareStatus').attr('data-state', state).text(labels[state]);
+      });
+    });
+  </script>
   </body>
 </html>
