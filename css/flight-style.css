@@ -1160,7 +1160,8 @@
             color: #8794a9;
             font-size: 12px;
         }
-
+.airline-logo{width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex:none;
+  font-weight:600;font-size:13px;background:var(--bs-danger-bg-subtle);color:var(--bs-danger-text-emphasis)}
 .fare-row{cursor:pointer;background:var(--bs-body-bg);border:1px solid var(--bs-border-color);
   border-radius:.35rem;padding:.35rem .55rem;transition:border-color .15s, background-color .15s; font-size:13px;}
 .fare-row:hover{border-color:var(--bs-secondary-border-subtle)}
@@ -1170,11 +1171,22 @@
 .fare-radio{width:16px;height:16px;border-radius:50%;border:1.5px solid var(--bs-secondary-color);
   display:inline-flex;align-items:center;justify-content:center;flex:none}
 .selected .fare-radio{background:var(--bs-primary);border-color:var(--bs-primary)}
+.fare-rule{font-size:12px; color:blue; cursor:pointer;margin:5px 0px;}
 .selected .fare-radio::after{content:"";width:6px;height:6px;border-radius:50%;background:#fff}
 
 .mlabel{display:block;font-size:.7rem;color:var(--bs-secondary-color)}
 @media (min-width:768px){.mlabel{display:none}}		
-		
+.fare-link{font-size:.62rem;text-decoration:none;display:inline-block;margin-top:2px}
+.fare-link:hover{text-decoration:underline}
+
+/* Fare rules modal */
+.rule-head{background:var(--bs-tertiary-bg)}
+.rule-chip{display:inline-flex;align-items:center;gap:.4rem;padding:.3rem .7rem;border-radius:2rem;font-size:.8rem;font-weight:500}
+.rule-table th{font-size:.75rem;text-transform:uppercase;letter-spacing:.03em;color:var(--bs-secondary-color);font-weight:600}
+.rule-table td,.rule-table th{padding:.7rem .9rem}
+.rule-note{border-left:3px solid var(--bs-warning);background:var(--bs-warning-bg-subtle);border-radius:.25rem;padding:.6rem .9rem;font-size:.85rem}
+.rule-list li{margin-bottom:.5rem}
+.rule-list i{margin-right:.5rem}		
         /* Responsive */
         @media (max-width: 767px) {
 
