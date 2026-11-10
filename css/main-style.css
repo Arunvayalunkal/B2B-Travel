@@ -127,7 +127,7 @@ color:#48524f;
 	margin:0px 5px 0px 0px;
 }
 .inner-nav li a{
-	padding:8px 13px 8px 35px;
+	padding:8px 10px 8px 10px;
 	margin:0px;
 	display:block;
 	color:#4a586e;
@@ -147,14 +147,15 @@ color:#48524f;
 	font-size:20px;
 	position:absolute;
 	left:10px;
-	color:var(--bta-red);
+	color:var(--bta-red) !important;
 }
 .bta-icons{
-	position:absolute;
-	left:10px;
+	
 	font-size:22px !important;
 }
 .material-symbols-outlined {
+	color:var(--bta-red) !important;
+	font-size:20px;
   font-variation-settings:
   'FILL' 0,
   'wght' 400,

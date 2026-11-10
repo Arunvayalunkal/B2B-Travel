@@ -46,7 +46,7 @@
   const key = (seg, p) => `${seg}|${p.type}${p.n}`;
   SEGMENTS.forEach(s => PAX.forEach(p => state.services[key(s.id, p)] = { bag: '', meal: '', seat: null, special: [] }));
 
-  /* ---------- Passengers ---------- */
+   /* ---------- Passengers ---------- */
   const paxList = document.getElementById('paxList');
   paxList.innerHTML = PAX.map((p, i) => {
     const id = `pax${i}`, titles = p.type === 'Adult' ? ['Mr', 'Mrs', 'Ms'] : ['Master', 'Miss'];
@@ -55,6 +55,9 @@
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#${id}" aria-expanded="true">
         <i class="bi bi-person-fill"></i>${p.type} ${p.n}<span class="pax-status text-muted" data-status="${id}">Incomplete</span></button></h3>
       <div id="${id}" class="accordion-collapse collapse show"><div class="accordion-body">
+      <div class="d-flex justify-content-end mb-3">
+        <button type="button" class="btn btn-pax-tool btn-pax-primary" data-fill-saved="${i}"><i class="bi bi-person-plus-fill"></i><span>Add your existing traveller</span></button>
+      </div>
       <div class="row g-3" data-pax="${id}">
         <div class="col-4 col-md-2"><label class="form-label" for="${id}t">Title</label>
           <select class="form-select" id="${id}t" required>${titles.map(t => `<option>${t}</option>`).join('')}</select></div>
@@ -77,6 +80,99 @@
     const s = document.querySelector(`[data-status="${row.dataset.pax}"]`);
     s.textContent = ok ? 'Complete' : 'Incomplete';
     s.className = 'pax-status ' + (ok ? 'text-success' : 'text-muted');
+  });
+
+
+  /* ---------- Toast helper ---------- */
+  function notify(msg, ok) {
+    const t = document.getElementById('toast');
+    t.classList.toggle('text-bg-success', !!ok); t.classList.toggle('text-bg-danger', !ok);
+    document.getElementById('toastMsg').textContent = msg;
+    bootstrap.Toast.getOrCreateInstance(t).show();
+  }
+
+  /* ---------- Fill passenger form (shared by saved list + upload) ---------- */
+  // Saved passengers: sample data (replace with API call, e.g. GET /agency/passengers?q=)
+  const SAVED = [
+    { type: 'Adult', title: 'Mr', first: 'Rahul', last: 'Menon', gender: 'Male', dob: '1988-04-12' },
+    { type: 'Adult', title: 'Mrs', first: 'Anjali', last: 'Menon', gender: 'Female', dob: '1990-09-03' },
+    { type: 'Adult', title: 'Mr', first: 'Rajesh', last: 'Kumar', gender: 'Male', dob: '1979-01-25' },
+    { type: 'Adult', title: 'Ms', first: 'Reshma', last: 'Nair', gender: 'Female', dob: '1995-11-30' },
+    { type: 'Child', title: 'Master', first: 'Rohan', last: 'Menon', gender: 'Male', dob: '2017-06-18' }
+  ];
+  const paxLabel = p => `${p.type} ${p.n}`;
+  function fillPax(i, d) {
+    const id = `pax${i}`, set = (sfx, v) => { const el = document.getElementById(id + sfx); if (!el) return; el.value = v || ''; if (el.tagName === 'SELECT' && el.value !== (v || '')) el.value = ''; };
+    set('t', d.title); set('f', d.first); set('l', d.last); set('g', d.gender); set('d', d.dob);
+    document.getElementById(id + 'f').dispatchEvent(new Event('input', { bubbles: true }));
+  }
+
+  /* ---------- Saved passengers modal ---------- */
+  const savedModalEl = document.getElementById('savedPaxModal');
+  const savedSearch = document.getElementById('savedPaxSearch'), savedResults = document.getElementById('savedPaxResults');
+  const savedHint = document.getElementById('savedPaxHint'), savedTarget = document.getElementById('savedPaxTarget');
+  const HINT = "Search your agency's saved passengers by name — at least three letters.";
+  const esc = t => String(t).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  savedTarget.innerHTML = PAX.map((p, i) => `<option value="${i}">${paxLabel(p)}</option>`).join('');
+  document.getElementById('savedPaxTargetWrap').classList.toggle('d-none', PAX.length < 2);
+  const updateSavedTitle = () => document.getElementById('savedPaxTitle').textContent = `Fill ${paxLabel(PAX[+savedTarget.value])} from saved`;
+  savedTarget.addEventListener('change', () => { updateSavedTitle(); runSavedSearch(); });
+  let matches = [];
+  function runSavedSearch() {
+    const q = savedSearch.value.trim().toLowerCase();
+    if (q.length < 3) { matches = []; savedResults.innerHTML = ''; savedHint.textContent = HINT; return; }
+    const type = PAX[+savedTarget.value].type;
+    matches = SAVED.filter(s => s.type === type && `${s.first} ${s.last}`.toLowerCase().includes(q));
+    savedHint.textContent = matches.length ? `${matches.length} saved passenger${matches.length > 1 ? 's' : ''} found. Select one to fill the form.` : `No saved ${type.toLowerCase()} matches “${savedSearch.value.trim()}”.`;
+    savedResults.innerHTML = matches.map((m, i) => `<button type="button" class="saved-item" data-i="${i}">
+      <span class="saved-avatar">${esc(m.first[0] + m.last[0])}</span>
+      <span class="flex-grow-1"><span class="d-block fw-semibold">${esc(m.title)} ${esc(m.first)} ${esc(m.last)}</span>
+      <span class="d-block small text-muted">${esc(m.gender)} · DOB ${esc(m.dob)}</span></span><i class="bi bi-chevron-right text-muted"></i></button>`).join('');
+  }
+  let debounce; savedSearch.addEventListener('input', () => { clearTimeout(debounce); debounce = setTimeout(runSavedSearch, 200); });
+  savedResults.addEventListener('click', e => {
+    const b = e.target.closest('.saved-item'); if (!b) return;
+    const i = +savedTarget.value; fillPax(i, matches[+b.dataset.i]);
+    bootstrap.Modal.getInstance(savedModalEl).hide();
+    notify(`${paxLabel(PAX[i])} filled from saved passengers.`, true);
+  });
+  // Per-passenger button: open the modal pre-targeted to that passenger
+  paxList.addEventListener('click', e => {
+    const b = e.target.closest('[data-fill-saved]'); if (!b) return;
+    savedTarget.value = b.dataset.fillSaved; bootstrap.Modal.getOrCreateInstance(savedModalEl).show();
+  });
+  // Top toolbar button: start from the first passenger
+  document.querySelector('.pax-tools [data-bs-target="#savedPaxModal"]').addEventListener('click', () => savedTarget.value = 0);
+  savedModalEl.addEventListener('show.bs.modal', () => { updateSavedTitle(); savedSearch.value = ''; runSavedSearch(); });
+  savedModalEl.addEventListener('shown.bs.modal', () => savedSearch.focus());
+
+  /* ---------- Upload passenger list / download sample (CSV) ---------- */
+  const CSV_HEAD = ['Passenger Type', 'Title', 'First Name', 'Last Name', 'Gender', 'Date of Birth (YYYY-MM-DD)'];
+  document.getElementById('paxSampleBtn').addEventListener('click', () => {
+    const rows = PAX.map((p, i) => [p.type, p.type === 'Adult' ? 'Mr' : 'Master', 'First' + (i + 1), 'Last' + (i + 1), 'Male', p.type === 'Adult' ? '1990-01-15' : '2018-05-20']);
+    const csv = [CSV_HEAD, ...rows].map(r => r.join(',')).join('\r\n');
+    const a = Object.assign(document.createElement('a'), { href: URL.createObjectURL(new Blob([csv], { type: 'text/csv' })), download: 'passenger-list-sample.csv' });
+    document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  });
+  const parseCsv = txt => txt.replace(/^\uFEFF/, '').split(/\r?\n/).filter(l => l.trim()).map(l => l.split(',').map(c => c.trim().replace(/^"|"$/g, '')));
+  const normDob = v => { const m = /^(\d{1,2})[-/](\d{1,2})[-/](\d{4})$/.exec(v); return m ? `${m[3]}-${m[2].padStart(2, '0')}-${m[1].padStart(2, '0')}` : v; };
+  const paxFile = document.getElementById('paxFile');
+  document.getElementById('paxUploadBtn').addEventListener('click', () => paxFile.click());
+  paxFile.addEventListener('change', () => {
+    const f = paxFile.files[0]; if (!f) return;
+    const r = new FileReader();
+    r.onload = () => {
+      const rows = parseCsv(String(r.result)).slice(1), used = new Set(); let n = 0;
+      PAX.forEach((p, i) => {
+        const ri = rows.findIndex((x, k) => !used.has(k) && x[0] && x[0].toLowerCase() === p.type.toLowerCase());
+        if (ri < 0) return;
+        used.add(ri); const row = rows[ri];
+        fillPax(i, { title: row[1], first: row[2], last: row[3], gender: row[4], dob: normDob(row[5]) }); n++;
+      });
+      notify(n ? `${n} passenger${n > 1 ? 's' : ''} filled from ${f.name}.` : 'No matching passengers found. Please use the sample file format.', !!n);
+      paxFile.value = '';
+    };
+    r.readAsText(f);
   });
 
   /* ---------- Add-ons: flight tabs > passenger > service tabs > thumbnail cards ---------- */

@@ -1311,3 +1311,26 @@
 
     .fare-status[data-state="offer"],
     .fare-status[data-state="commission"] { color: #16a34a; }
+	
+	/* passenger toolbar buttons */
+.pax-head .section-title{margin-bottom:0}
+.btn-pax-tool{display:inline-flex;align-items:center;gap:.45rem;background:#fff;color:var(--brand);border:1.5px solid #cdd6ef;border-radius:2rem;padding:.45rem .95rem;font-size:.82rem;font-weight:600;line-height:1.2;transition:background .15s,border-color .15s,color .15s,box-shadow .15s,transform .15s}
+.btn-pax-tool i{font-size:1rem}
+.btn-pax-tool:hover,.btn-pax-tool:focus-visible{background:#eef2fc;border-color:var(--brand);color:var(--brand-dark);box-shadow:0 2px 8px rgba(42,74,160,.15)}
+.btn-pax-tool:active{transform:translateY(1px)}
+.btn-pax-tool:focus-visible{outline:3px solid #9db3ea;outline-offset:1px}
+.btn-pax-primary{background:var(--brand);border-color:var(--brand);color:#fff}
+.btn-pax-primary:hover,.btn-pax-primary:focus-visible{background:var(--brand-dark);border-color:var(--brand-dark);color:#fff}
+@media(max-width:575px){.pax-tools{width:100%}.btn-pax-tool{flex:1 1 100%;justify-content:center}}
+
+/* saved passengers modal */
+.saved-modal{border:0;border-radius:.9rem;box-shadow:0 12px 40px rgba(20,30,70,.2)}
+.saved-modal .modal-title{font-weight:700;font-size:1.05rem;color:#0f2a4a}
+.saved-modal hr{border-color:var(--line);opacity:1}
+.saved-search .input-group-text{background:#fff;border-color:#cfd5e6;border-radius:.6rem 0 0 .6rem;color:#7b84a3}
+.saved-search .form-control{border-left:0;border-radius:0 .6rem .6rem 0}
+.saved-search:focus-within .input-group-text{border-color:var(--brand)}
+.saved-results{max-height:260px;overflow:auto}
+.saved-item{display:flex;align-items:center;gap:.75rem;width:100%;text-align:left;background:none;border:0;border-radius:.6rem;padding:.6rem .5rem}
+.saved-item:hover,.saved-item:focus-visible{background:#eef2fc}
+.saved-avatar{width:36px;height:36px;border-radius:50%;background:#e3ebfb;color:var(--brand);display:flex;align-items:center;justify-content:center;font-weight:600;flex:none}
